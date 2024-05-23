@@ -1,18 +1,20 @@
-import { Route, Routes, matchPath, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from './Header'
 import Main from './Main'
 import CharacterDetail from './CharacterDetail'
 import Footer from './Footer'
 import { useEffect, useState } from "react";
 import fetchCharacterData from "../services/fetchCharacterData";
+import '../styles/App.scss'
+import '../styles/var.scss'
 
 const App = () => {
 
   const [characterData, setCharacterData] = useState([]);
   const [search, setSearch] = useState("");
-  const [speciesFilter, setSpeciesFilter] = useState([]);
+  const [speciesFilter, setSpeciesFilter] = useState("");
   const [statusFilter, setStatusFilter] = useState("");
-  const [originFilter, setOriginFilter] = useState([])
+  const [originFilter, setOriginFilter] = useState("")
 
 
   const handleName = (ev)=> { setSearch(ev.target.value) }
@@ -52,9 +54,8 @@ const App = () => {
     }
   } )
 
-  console.log(characterData)
   return (
-    <>
+    <body className="body">
       <Header/>
       <Routes>
         <Route path='/' element={
@@ -63,6 +64,7 @@ const App = () => {
             handleName={handleName} 
             search={search} 
             setSearch={setSearch}
+            speciesFilter={speciesFilter}
             setSpeciesFilter={setSpeciesFilter} 
             species={getSpecies()} 
             statusFilter={statusFilter}
@@ -75,7 +77,7 @@ const App = () => {
         <Route path='/character/:id' element={<CharacterDetail characterData={characterData} />}/>
       </Routes>
       <Footer/>
-    </>
+    </body>
   );
 };
 

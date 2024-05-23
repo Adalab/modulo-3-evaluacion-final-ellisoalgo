@@ -1,0 +1,63 @@
+.card{
+
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+
+    &_img{
+        border-radius: 50%;
+        width: 150px;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+        
+    }
+
+    &_deets{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 200px;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        color: 	black;
+        
+    
+        &-name{
+            font-size: 16px;
+            line-height: normal;
+            margin: 0;
+            text-shadow: 0 0 3px #04ADBF;
+        }
+    
+        &-spec{
+            font-size: 12px;
+            font-weight: 200;
+            margin: 0;
+            text-shadow: 0 0 3px #04ADBF;
+        }
+    
+        &-link{
+            color: #04ADBF;
+            font-size: 10px;
+
+            &:hover{
+                    color: #0DF205;
+                    text-shadow:0px 0px 30px #0DF205;
+                    -moz-transition: all 0.2s ease-in;
+                    -o-transition: all 0.2s ease-in;
+                    -webkit-transition: all 0.2s ease-in;
+                    transition: all 0.2s ease-in;
+             }
+    
+        }
+    }
+
+    
+}

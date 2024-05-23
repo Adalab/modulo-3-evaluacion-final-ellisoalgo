@@ -1,0 +1,32 @@
+.main{
+
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+    }
+
+    &_filterBox{
+        padding: 10px;
+        margin: 10px;
+        border: solid 1px white;
+        border-radius: 5px;
+        width: 300px;
+        height: fit-content;
+        backdrop-filter: blur(10px);
+        @media screen and (min-width: 768px) {
+            align-self: center;
+            position: sticky;
+        }
+    }
+}

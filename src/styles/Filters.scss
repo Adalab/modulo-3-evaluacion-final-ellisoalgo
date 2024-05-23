@@ -1,0 +1,62 @@
+.filters{
+    
+    text-align: center;
+    color: #97ce4c;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    &_form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px; 
+        margin-right: 10px;
+        align-items: center;
+        gap: 5px;
+        
+        &-input{
+            border: solid 1px #97ce4c;
+            background-color: transparent;
+            text-align: left;
+            width: 220px;
+            color: #97ce4c;
+
+            &::placeholder{
+                color: #04ADBF;
+            }
+
+            &:focus{
+                border: solid 1px #04ADBF;
+                outline: none;
+                color: #04ADBF;
+                background: transparent;
+
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &_reset{
+        border: solid 1px #97ce4c;
+        background-color: rgba($color: #000000, $alpha: 0.15);
+        color:#97ce4c;
+        margin-top: 10px;
+
+        &:hover{
+            background-color: #97ce4c;
+            color: black;
+        }
+
+       @media screen and (min-width: 768px) {
+            margin-left: 10px;
+       }
+    }
+}

@@ -1,0 +1,119 @@
+.detail{
+
+    height: 82vh;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    &_card{
+        
+        backdrop-filter: blur(5px);
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        width: 300px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        
+
+        &-img{
+            
+            width: 300px;
+            padding: 0px 10px 0 10px;
+            transform: translate(0, 10px);
+        }
+
+        &-info{
+
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 300px;
+            color: 	black;
+
+            &-name{
+                color: #97ce4c;
+                text-align: left;
+                padding-left: 10px;
+                margin-bottom: 10px;
+                border-bottom: 1px solid #97ce4c;
+                width: 90%;
+                margin-left: 10px;
+            }
+
+            &-list{
+                text-align: left;
+                padding-left: 20px;
+                font-size: 12px;
+                line-height: 20px;
+                color: #04ADBF;
+            }
+        }
+
+        .detail_back{
+            color: white;
+            text-decoration: none;
+            border: #04ADBF solid 1px;
+            background-color: rgba($color: #04ADBF, $alpha: 0.5);
+            padding: 5px;
+            align-self: flex-end;
+            font-size: 12px;
+            transform: translate(0, -35px);
+
+
+            &:hover {
+                color: #04ADBF;
+                background-color: white;
+                border: solid 1px white;
+            }
+        }
+    }
+}
+
+.detail_error{
+
+    height: 82vh;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-card{
+        text-align: center;
+        text-shadow: 0 0 3px #04ADBF;
+        color: azure;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+
+        &-img{
+            width: 300px;
+        }
+
+        &-text{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 20px 15px 10px 15px;
+            max-width: 600px;
+
+            &-link{
+                color: #04ADBF;
+                text-decoration: none;
+                text-shadow: 0 0 3px #04ADBF;
+
+                &:hover{
+                    color: white;
+                    text-shadow: 0 0 3px #04ADBF;
+                }
+            }
+        }
+    }
+}
+
+    
