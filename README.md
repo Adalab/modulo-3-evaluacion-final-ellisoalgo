@@ -1,4 +1,6 @@
-# Final Project - Module 3
+![image](https://github.com/Adalab/modulo-3-evaluacion-final-ellisoalgo/assets/161454802/7c81eaf3-6b00-4e86-af9f-b3522e2cd945)
+
+# Final Evaluation - Module 3
 This project is the final evaluation of Module 3 from Adalab. It consists of a web application developed with in React, which allows users to search and view characters from the Rick and Morty series.
 ## Application Overview
 The application focuses on providing an intuitive interface for searching Rick and Morty characters. Users can filter characters by name, status (alive, dead, unknown), planet of origin, and species. Detailed information about each character, including their image, name, species, and status, is displayed upon selection. The application is fully responsive, designed in mobile-first, and adaptable to all screen sizes.
@@ -32,7 +34,7 @@ Ensure you have the following software installed:
    Open your browser and navigate to `http://localhost:5173` to see the application in action.
 ## Tools Used
 - **HTML5**: Used for structuring the content of the application.
-- **CSS3**: Used for designing the user interface.
+- **SCSS**: Used for designing the user interface.
 - **JavaScript (ES6)**: Used for the logic and interactivity of the application.
 - **React**: JavaScript library used to build the user interface declaratively and efficiently.
 - **React Router**: Used for handling navigation between different views of the application.
