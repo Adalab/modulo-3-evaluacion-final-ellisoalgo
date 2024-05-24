@@ -68,4 +68,17 @@ The project structure is as follows:
 - **Rendering Characters**: The character data is rendered in a list format.
 - **Filtering**: Users can filter characters based on name, status, planet of origin, and species. If there are no matches, an error message will appear. The reset button allows users to reset the filters to their original state and start to search from scratch.
 - **Character Details**: Clicking on a character displays detailed information about them. When the route does not match any characters, an error message is displayed that allows the user to navigate back to the home page. When navigating back to the search page, the search inputs are maintained so the user can continue browsing with the parameters they had already entered.
-## Thank you and enjoy my app! Wubba Dubba Lub Lub
+## Application Screens
+**Main screen**
+<img width="1440" alt="Screenshot 2024-05-24 at 09 21 25" src="https://github.com/Adalab/modulo-3-evaluacion-final-ellisoalgo/assets/161454802/f852eb5d-3285-49d5-b3bf-63596f6b7346">
+
+**Search results & no results screens**
+<img width="1440" alt="Screenshot 2024-05-24 at 09 21 49" src="https://github.com/Adalab/modulo-3-evaluacion-final-ellisoalgo/assets/161454802/27516f56-cf7d-40c0-9f6b-ef7af48106ab">
+<img width="1440" alt="Screenshot 2024-05-24 at 09 22 44" src="https://github.com/Adalab/modulo-3-evaluacion-final-ellisoalgo/assets/161454802/599293c1-f1fa-4356-9633-f038ea7e34f9">
+
+**Character detail & character not found**
+<img width="1440" alt="Screenshot 2024-05-24 at 09 22 14" src="https://github.com/Adalab/modulo-3-evaluacion-final-ellisoalgo/assets/161454802/63c97dac-291a-4b81-9d0c-b27a26e010ca">
+<img width="1440" alt="Screenshot 2024-05-24 at 09 22 31" src="https://github.com/Adalab/modulo-3-evaluacion-final-ellisoalgo/assets/161454802/61fa336d-5624-469b-9b3d-03bb638ec321">
+
+## Thank you and enjoy my app! [Wubba Dubba Lub Lub](https://github.com/Adalab/modulo-3-evaluacion-final-ellisoalgo/assets/161454802/7c81eaf3-6b00-4e86-af9f-b3522e2cd945)
+
