@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import '../styles/Main.scss'
 
 
-const Main = ({data, handleName, search, setSearch, speciesFilter, setSpeciesFilter, species, statusFilter, setStatusFilter, origin, setOriginFilter}) => {
+const Main = ({data, handleName, search, setSearch, speciesFilter, setSpeciesFilter, species, statusFilter, setStatusFilter, origin, setOriginFilter, locationFilter, setLocationFilter, location}) => {
   return (
     <main className='main'>
         <div className='main_filterBox'>
@@ -19,6 +19,10 @@ const Main = ({data, handleName, search, setSearch, speciesFilter, setSpeciesFil
             setStatusFilter={setStatusFilter}
             origin={origin}
             setOriginFilter={setOriginFilter}
+            data={data}
+            locationFilter={locationFilter}
+            setLocationFilter={setLocationFilter}
+            location={location}
             />
         </div>
         <CharacterList data={data}/>
@@ -38,6 +42,9 @@ Main.propTypes = {
   setStatusFilter: PropTypes.func,
   origin: PropTypes.array,
   setOriginFilter: PropTypes.func,
+  locationFilter: PropTypes.func,
+  setLocationFilter: PropTypes.func,
+  location: PropTypes.array
 }
 
 export default Main

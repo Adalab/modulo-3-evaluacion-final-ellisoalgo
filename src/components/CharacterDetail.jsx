@@ -24,7 +24,7 @@ const CharacterDetail = ({characterData}) => {
                     <p><strong>Species:</strong> {characterInfo.species}</p>
                     <p><strong>Planet of origin:</strong> {characterInfo.origin}</p>
                     <p><strong>Current status:</strong> {characterInfo.status}</p>
-                    <p><strong>Appears in:</strong> {characterInfo.episodes} episdoes</p>
+                    <p><strong>Appears in:</strong> {characterInfo.episodes} episodes</p>
                 </div>
             </div>
         </div>

@@ -14,7 +14,8 @@ const App = () => {
   const [search, setSearch] = useState("");
   const [speciesFilter, setSpeciesFilter] = useState("");
   const [statusFilter, setStatusFilter] = useState("");
-  const [originFilter, setOriginFilter] = useState("")
+  const [originFilter, setOriginFilter] = useState("");
+  const [locationFilter, setLocationFilter] = useState("");
 
 
   const handleName = (ev)=> { setSearch(ev.target.value) }
@@ -37,6 +38,13 @@ const App = () => {
     return originList
   }
 
+  const getLocation = () =>{
+    const location = characterData.map((character)=> character.location)
+    const allLocationsList = new Set(location)
+    const locationList = [...allLocationsList]
+    return locationList
+  }
+
   const filterData = characterData.filter((character)=>{
     if (speciesFilter.length === 0){
       return true;
@@ -53,6 +61,13 @@ const App = () => {
       return originFilter.includes(character.origin)
     }
   } )
+  .filter((character)=>{
+    if (locationFilter.length === 0){
+      return true;
+    } else {
+      return locationFilter.includes(character.origin)
+    }
+  })
 
   return (
     <body className="body">
@@ -71,6 +86,9 @@ const App = () => {
             setStatusFilter={setStatusFilter}
             origin={getOrigin()}
             setOriginFilter={setOriginFilter}
+            locationFilter={locationFilter}
+            setLocationFilter={setLocationFilter}
+            location={getLocation()}
             />
         }/>
 
